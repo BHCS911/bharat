@@ -56,18 +56,18 @@
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
 
-        <img src="./assets/img/editedlogo.png" alt="" style="width: 350px; height: 80px;padding-bottom:15px" >
+        <img src="./assets/img/editedlogo.png" alt="" class="logo" >
 
       </a>
       <!-- <div style="padding-right: 120px;font: size 10px; ">
         <h1>"Empowering lives through exceptional home care"</h1>
       </div> -->
-      <div style="padding-right:50px;padding-bottom: 10px; color:#fff" <font><size:30px>"EMPOWERING LIVES THROUGH EXCEPTIONAL HOME CARE"</size:30px></font>
+      <div class="tagline" style="padding-right:50px;padding-bottom: 10px; color:#fff" <font><size:30px>"EMPOWERING LIVES THROUGH EXCEPTIONAL HOME CARE"</size:30px></font>
       </div>
       <!-- concact -->
       <div>
         <!-- <a class="cta-btn align-self-start" href="window.location='tel:+918891203900'">Call Us Now</a> -->
-        <button style="margin-bottom:5px;margin-right:40px;border-style:none; width: 200px ;background-color:maroon; color:#fff;display:flex;align-items:flex-starts" class="cta-btn" onclick="window.location='tel:+91 88912 03900'">
+        <button class="number" style="margin-bottom:5px;margin-right:40px;border-style:none; width: 200px ;background-color:maroon; color:#fff;display:flex;align-items:flex-starts" class="cta-btn" onclick="window.location='tel:+91 88912 03900'">
           <img src="./assets/img/cLLI-removebg-preview.png" style="height: 60px;width: 60px;padding-bottom:5px">
           +91-8891203900<br>+91-9074031583
         </button>
@@ -92,6 +92,91 @@
   
   <hr>
   <hr>
+  <style>
+    .logo {
+      width: 300px;
+      height: 60px;
+      display: block;
+      
+    }
+    
+    /* Styles for mobile devices */
+    @media (max-width: 768px) {
+      .logo {
+        width: 80px;
+        height:16px;
+        padding-top:10px;
+      }
+    }
+    
+    /* Styles for tablets */
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .logo {
+        width: 150px;
+        height: 30px;
+        padding:20px;
+        margin: 0px;
+      }
+    }
+
+    /* Default styles for the header */
+        .header {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+          padding: 0px;
+          background-color: #f8f9fa;
+        }
+
+        .header .logo {
+          width: 200px;
+          height: auto;
+        }
+
+        .header .tagline {
+          font-size: 8px;
+          margin: 0;
+          padding:0px;
+        }
+
+        /* Styles for mobile devices (max-width: 576px) */
+        @media (max-width: 576px) {
+          .header .tagline {
+            order: -1;
+            margin-top: 10px;
+            padding-top: 15px;
+            font-size: 4px;
+
+          }
+        }
+        .number {
+          width: 300px;
+          height: 60px;
+          display: block;
+          
+        }
+        
+        /* Styles for mobile devices */
+        @media (max-width: 768px) {
+          .number {
+            width: 80px;
+            height:16px;
+          }
+        }
+        
+        /* Styles for tablets */
+        @media (min-width: 768px) and (max-width: 1024px) {
+          .number {
+            width: 150px;
+            height: 30px;
+            padding-bottom: 20px;
+            margin: 0px;
+          }
+        }
+  </style>
+
+
 
   <!-- ======= Hero Section ======= -->
   <div class="new" style="display: flex;flex-direction:row;align-items:center;justify-content:space-around">
